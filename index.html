@@ -1,29 +1,43 @@
 <html><head><title>FlexDamage Reports</title>
-<style>body{font-family:sans-serif;max-width:800px;margin:2em auto;padding:0 1em}
-h1{color:#1f4e79}ul{line-height:1.7}a{color:#2c5c8f;text-decoration:none}
-a:hover{text-decoration:underline}.meta{color:#666;font-size:0.9em;margin-top:2em}</style>
+<style>body{font-family:sans-serif;max-width:980px;margin:2em auto;padding:0 1em}
+h1{color:#1f4e79}h2{color:#1f4e79;border-bottom:1px solid #d0d7de;padding-bottom:.3em;margin-top:2em}
+table{border-collapse:collapse;width:100%;margin:0.5em 0}
+th,td{padding:6px 10px;border-bottom:1px solid #eee;text-align:left}
+th{background:#f6f8fa;font-weight:600;font-size:.95em}
+a{color:#2c5c8f;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#666;font-size:0.9em;margin-top:3em;border-top:1px solid #d0d7de;padding-top:1em}</style>
 </head><body>
 <h1>Flexible Damage Function Reports</h1>
-<p>Climate Impact Lab &mdash; Impact-Region-level damage function diagnostic reports.</p>
-<ul>
-  <li><a href="agriculture_cassava_ir.html">Agriculture Cassava</a></li>
-  <li><a href="agriculture_corn_ir.html">Agriculture Corn</a></li>
-  <li><a href="agriculture_rice_ir.html">Agriculture Rice</a></li>
-  <li><a href="agriculture_sorghum_ir.html">Agriculture Sorghum</a></li>
-  <li><a href="agriculture_soy_ir.html">Agriculture Soy</a></li>
-  <li><a href="agriculture_wheat_combined_ir.html">Agriculture Wheat Combined</a></li>
-  <li><a href="agriculture_wheat_spring_ir.html">Agriculture Wheat Spring</a></li>
-  <li><a href="agriculture_wheat_winter_ir.html">Agriculture Wheat Winter</a></li>
-  <li><a href="energy_electricity_ir.html">Energy Electricity</a></li>
-  <li><a href="energy_non_electricity_ir.html">Energy Non Electricity</a></li>
-  <li><a href="energy_total_ir.html">Energy Total</a></li>
-  <li><a href="labor_combined_ir.html">Labor Combined</a></li>
-  <li><a href="labor_high_risk_ir.html">Labor High Risk</a></li>
-  <li><a href="labor_low_risk_ir.html">Labor Low Risk</a></li>
-  <li><a href="mortality_allcause_ir.html">Mortality Allcause</a></li>
-</ul>
+<p>Climate Impact Lab &mdash; diagnostic reports for region-specific damage functions, estimated at impact-region and country resolutions. <a href="https://climateimpactlab.github.io/flex-damage/units/">Units &amp; methodology</a> | <a href="https://zenodo.org/concept/19199919">Parameters on Zenodo</a></p>
+<h2>Agriculture</h2>
+<table><thead><tr><th>Subsector</th><th>Impact Region</th><th>Country</th><th>Country (unconstrained — diagnostic)</th></tr></thead><tbody>
+<tr><td>Cassava</td><td><a href="agriculture_cassava_ir.html">view</a></td><td><a href="agriculture_cassava_country.html">view</a></td><td>—</td></tr>
+<tr><td>Corn</td><td><a href="agriculture_corn_ir.html">view</a></td><td><a href="agriculture_corn_country.html">view</a></td><td>—</td></tr>
+<tr><td>Rice</td><td><a href="agriculture_rice_ir.html">view</a></td><td><a href="agriculture_rice_country.html">view</a></td><td>—</td></tr>
+<tr><td>Sorghum</td><td><a href="agriculture_sorghum_ir.html">view</a></td><td><a href="agriculture_sorghum_country.html">view</a></td><td>—</td></tr>
+<tr><td>Soy</td><td><a href="agriculture_soy_ir.html">view</a></td><td><a href="agriculture_soy_country.html">view</a></td><td>—</td></tr>
+<tr><td>Wheat Combined</td><td><a href="agriculture_wheat_combined_ir.html">view</a></td><td><a href="agriculture_wheat_combined_country.html">view</a></td><td>—</td></tr>
+<tr><td>Wheat Spring</td><td><a href="agriculture_wheat_spring_ir.html">view</a></td><td><a href="agriculture_wheat_spring_country.html">view</a></td><td>—</td></tr>
+<tr><td>Wheat Winter</td><td><a href="agriculture_wheat_winter_ir.html">view</a></td><td><a href="agriculture_wheat_winter_country.html">view</a></td><td>—</td></tr>
+</tbody></table>
+<h2>Energy</h2>
+<table><thead><tr><th>Subsector</th><th>Impact Region</th><th>Country</th><th>Country (unconstrained — diagnostic)</th></tr></thead><tbody>
+<tr><td>Electricity</td><td><a href="energy_electricity_ir.html">view</a></td><td><a href="energy_electricity_country.html">view</a></td><td><a href="energy_electricity_country_unconstrained.html">view</a></td></tr>
+<tr><td>Non Electricity</td><td><a href="energy_non_electricity_ir.html">view</a></td><td><a href="energy_non_electricity_country.html">view</a></td><td><a href="energy_non_electricity_country_unconstrained.html">view</a></td></tr>
+<tr><td>Total</td><td><a href="energy_total_ir.html">view</a></td><td><a href="energy_total_country.html">view</a></td><td><a href="energy_total_country_unconstrained.html">view</a></td></tr>
+</tbody></table>
+<h2>Labor</h2>
+<table><thead><tr><th>Subsector</th><th>Impact Region</th><th>Country</th><th>Country (unconstrained — diagnostic)</th></tr></thead><tbody>
+<tr><td>Combined</td><td><a href="labor_combined_ir.html">view</a></td><td><a href="labor_combined_country.html">view</a></td><td>—</td></tr>
+<tr><td>High Risk</td><td><a href="labor_high_risk_ir.html">view</a></td><td><a href="labor_high_risk_country.html">view</a></td><td>—</td></tr>
+<tr><td>Low Risk</td><td><a href="labor_low_risk_ir.html">view</a></td><td><a href="labor_low_risk_country.html">view</a></td><td>—</td></tr>
+</tbody></table>
+<h2>Mortality</h2>
+<table><thead><tr><th>Subsector</th><th>Impact Region</th><th>Country</th><th>Country (unconstrained — diagnostic)</th></tr></thead><tbody>
+<tr><td>Allcause</td><td><a href="mortality_allcause_ir.html">view</a></td><td><a href="mortality_allcause_country.html">view</a></td><td>—</td></tr>
+</tbody></table>
 <p class="meta">
-  <a href="https://zenodo.org/records/19225233">Parameters (Zenodo)</a> | 
   <a href="https://climateimpactlab.github.io/flex-damage/">Documentation</a> | 
-  <a href="https://github.com/ClimateImpactLab/flex-damage">GitHub</a>
+  <a href="https://github.com/ClimateImpactLab/flex-damage">GitHub repo</a> | 
+  <a href="https://zenodo.org/concept/19199919">Zenodo concept</a>
 </p></body></html>
